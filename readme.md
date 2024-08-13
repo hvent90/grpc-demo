@@ -4,6 +4,7 @@
 
 ### Prerequisites
 
+- (recommended) Create python venv: `python -m venv .venv && source .venv/bin/activate`
 - Docker: Download [4.24.2](https://docs.docker.com/desktop/release-notes/#4242), because it is the newest version that is compatible with Big Sur.
 - Python packages: `pip install -r requirements.txt`
 

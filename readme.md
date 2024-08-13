@@ -78,5 +78,12 @@ Backend:
 
 ## A poem
 
-Stop closing unresolved github issues.
-
+```
+Start
+resolving the
+github issue on grpc
+instead of pressing Close.
+Please don't give it
+a premature
+End
+```

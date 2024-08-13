@@ -76,3 +76,7 @@ Backend:
 - grpc
 - listens on port 5000
 
+## A poem
+
+Stop closing unresolved github issues.
+

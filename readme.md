@@ -29,6 +29,7 @@ docker images
 
 # Check if the container is running
 docker container ls
+> 58bafe55318d   envoyproxy/envoy:v1.25-latest   "/docker-entrypoint.…"   About an hour ago   Up About an hour   0.0.0.0:8080->8080/tcp, 10000/tcp   envoy
 
 # Stop the docker container
 docker ps -a

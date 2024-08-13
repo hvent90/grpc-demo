@@ -16,9 +16,24 @@ npm install
 ```
 
 ### Run Envoy
+`./run_envoy.sh` will download an older version of Envoy: v1.25 - because Macbook 2014.
 ```sh
 cd backend/envoy
 ./run_envoy.sh
+```
+For future me, because you will forget - this is how you manage docker:
+```
+# Check if the docker image has downloaded:
+docker images
+> envoyproxy/envoy   v1.25-latest   eca697ab203d   10 months ago   161MB
+
+# Check if the container is running
+docker container ls
+
+# Stop the docker container
+docker ps -a
+> 254ab82b3350   envoyproxy/envoy:v1.25-latest   "/docker-entrypoint.…"   13 hours ago        Exited (0) 11 hours ago                                       envoy-envoy-1
+docker rm -f {container id, which in this scenario is 254ab82b3350}
 ```
 
 ### Run Backend

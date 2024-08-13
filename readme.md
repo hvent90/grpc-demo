@@ -9,24 +9,29 @@
 
 ### Generate the types
 ```sh
-cd proto && ./generate_proto.sh
+cd proto
+npm install
+./generate_proto.sh
 ```
 
 ### Run Envoy
 ```sh
-cd backend/envoy && ./run_envoy.sh
+cd backend/envoy
+./run_envoy.sh
 ```
 
 ### Run Backend
 ```sh
 # pip install -r requirements.txt <-- you should have already done this
-cd backend && python server.py
+cd backend
+python server.py
 ```
 
 ### (optional) Test GRPC server from Python client
 Do this after you have ran the backend.
 ```sh
-cd backend && python client.py
+cd backend
+python client.py
 ```
 
 ### Run Frontend
@@ -36,7 +41,7 @@ npm install
 npm run dev
 ```
 
-Open browser to localhost:5173 and look in the console. You should see the grpc response logged.
+Open browser to http://localhost:5173 and look in the console. You should see the grpc response logged.
 
 ## Stack
 

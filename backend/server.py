@@ -1,15 +1,4 @@
 import asyncio
-# from asyncio import futures
-# import sys
-# import os
-# Add the directory containing the proto files to the Python path
-# proto_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "proto_generated")
-# sys.path.insert(0, proto_dir)
-
-# # Add the Backend directory to the Python path
-# backend_dir = os.path.dirname(os.path.dirname(__file__))
-# sys.path.insert(0, backend_dir)
-
 from grpclib.server import Server
 from proto import PingTestServiceBase, PingTestResponse, PingTestRequest
 
